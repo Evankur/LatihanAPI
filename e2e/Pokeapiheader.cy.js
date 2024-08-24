@@ -8,8 +8,8 @@ describe('Validate Header',()=>{
             expect(response.status).equal(200)
             expect(response.body).to.have.be.an('object');
             expect(response.body).to.have.property('name');
-            
+            expect(response.body.name).to.be.a('string').and.have.length.greaterThan(0);
+            expect(response.body.name).to.not.be.empty; 
         })
-
     })
 })
