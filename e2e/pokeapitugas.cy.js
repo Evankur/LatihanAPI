@@ -1,10 +1,4 @@
-///<reference types ="cypress"/>
-describe('Validasi',()=>{
-  it('Succesfull validate content',()=>{
-    cy.request('https://pokeapi.co/api/v2/pokemon/bulbasaur').as('bulbasaur')
-    cy.get('@bulbasaur').its('body').should('include',{name:"bulbasaur"})
-  })
-})
+
 //{
   //  "abilities": [
     //    {
